@@ -7,9 +7,9 @@ namespace _8_paskaita_2018_11_20.Classes
     class Ducati
     {
         // duomenys
-        public string Model;
+        private string Model;
         private int Year;
-        public string Color;
+        private string Color;
         private bool Immobilizer;
 
         // konstruktorius
@@ -22,6 +22,21 @@ namespace _8_paskaita_2018_11_20.Classes
         }
 
         //metodai
+        public string GetModel()
+        {
+            return Model;
+        }
+
+        public void EditColor(string newColor)
+        {
+            Color = newColor;
+        }
+
+        public void EditImmobilizer(bool addRemImmobilizer)
+        {
+            Immobilizer = addRemImmobilizer;
+        }
+
         public void Review()
             {
             if (Immobilizer == true)

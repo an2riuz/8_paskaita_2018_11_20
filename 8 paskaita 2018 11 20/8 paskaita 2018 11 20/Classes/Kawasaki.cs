@@ -7,9 +7,9 @@ namespace _8_paskaita_2018_11_20.Classes
     class Kawasaki
     {
         // duomenys
-        public string Model;
+        private string Model;
         private int Year;
-        public string Color;
+        private string Color;
         private bool Immobilizer;
 
         // konstruktorius

@@ -16,10 +16,16 @@ namespace _8_paskaita_2018_11_20
             Kawasaki Kawasaki1 = new Kawasaki("ZX10R", 2012, "Green", true);
             Suzuki Suzuki1 = new Suzuki("Bandit", 1998, "Yellow", false);
 
-            Console.WriteLine(Ducati1.Color + Honda1.Model + Ducati2.Model);
+            //Console.WriteLine(Ducati1.Color + Honda1.Model + Ducati2.Model);
             Ducati2.Review();
             Suzuki1.Review();
-            
+            Console.WriteLine(Ducati1.GetModel());
+            Ducati1.EditImmobilizer(false);
+            Ducati1.Review();
+
+            Product Preke1 = new Product("Batonas", 12, 0.3f, 20180910, "Trecia lentyna");
+            Preke1.PrekesAprasymas();
+
             Console.ReadKey();
         }
     }
