@@ -17,6 +17,9 @@ namespace _8_paskaita_2018_11_20
             Suzuki Suzuki1 = new Suzuki("Bandit", 1998, "Yellow", false);
 
             Console.WriteLine(Ducati1.Color + Honda1.Model + Ducati2.Model);
+            Ducati2.Review();
+            Suzuki1.Review();
+            
             Console.ReadKey();
         }
     }

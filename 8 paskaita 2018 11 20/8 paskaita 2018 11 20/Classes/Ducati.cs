@@ -22,6 +22,19 @@ namespace _8_paskaita_2018_11_20.Classes
         }
 
         //metodai
+        public void Review()
+            {
+            if (Immobilizer == true)
+            {
+                Console.WriteLine("{0} has been made {1}, painted in {2}. It has security feature Immobilizer.", Model, Year, Color, Immobilizer);
+            }
+            else
+            {
+                Console.WriteLine("{0} has been made {1}, painted in {2}.", Model, Year, Color);
+            }
+            
+            }
+
         public void StartingEngine()
             {
 
